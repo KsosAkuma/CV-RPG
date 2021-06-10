@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+   cursor: crosshair;
+    
+}
+body{
+    display: grid;
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 10px;
+    grid-template-rows: 5% 10% 45% 10% 30%;
+    grid-template-columns: 26% 7% 24% 7% 36%;
+    gap: 10px;
+    margin: 10px;
+    background-image: url(/asset/background1.jpeg);
+    background-size: cover;
+
+    color: rgb(51, 227, 230);
+    text-shadow: 1px 1px 10px rgba(0, 34, 85, 0.50), -1px -1px 10px rgb(0, 34, 85, 0.50), -1px 1px 10px rgb(0, 34, 85, 0.50) ,1px -1px 10px rgb(0, 34, 85, 0.50);
+}
+article{
+    border-radius: 5px;
+    background-color: none;
+    box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178);
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border: 1px outset rgb(49, 178, 180);
+    padding: 2px;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 15px;
+    
+}
+
+h2{
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+li{
+  list-style: none; 
+  padding: 2px 20px 2px 20px; 
+}
+strong{
+    font-size: 1.1em;
+}
+#coordonnes{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    animation: arrive 10s linear;
+    
+}
+#title{
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    animation: arrive 9s linear;
+}
+#title h2{
+    padding: 0;
+    margin: 0;
+}
+
+#inventaire{
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #00060688;
+    z-index: 1;
+    padding: 0;
+    animation: arrive 8s linear;
+    
+}
+.itemHero{
+    border-radius: 2px;
+    /* box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178); */
+    box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178), 0 -8px 32px 0 rgba(49, 178, 180, 0.178);
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    /* border: 1px inset rgb(49, 178, 180); */
+    margin: 0;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+#inventaire #canvas{
+    grid-row: 1 / 5;
+    grid-column: 2 / 6;
+    width: 100%;
+    height: 100%;
+}
+#hardSkill{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    animation: arrive 6s linear;
+}
+#deuxList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0px;
+}
+#softSkill{
+    animation: arrive 5s linear ;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    
+}
+#exp{
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+    z-index: 0;
+    animation: arrive 4s linear ;
+}
+#formation{
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+    animation: arrive 6s linear;
+}
+#description{
+    grid-column: 4 / 6;
+    grid-row: 4 / 6;
+    z-index: 2;
+    animation: arrive 8s linear ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#formation li:nth-child(odd){
+    margin-top: 7px;
+}
+#description h2{
+    position: fixed;
+    top: 60px;
+    left: 20px;
+   }
+#description p{
+ padding: 30px;
+}
+.radiation{
+    animation: glitch 0.3s ease-out alternate-reverse;
+    animation-iteration-count: 4;
+}
+.radiation2{
+    animation: glitch 0.1s ease-out 1s alternate-reverse;
+    animation-iteration-count: 10;
+}
+@keyframes glitch{
+    0%{transform: skew(0deg) translateX(0px);}
+    6.25%{transform: skew(0deg) translateX(0px);}
+    12.5%{transform: skew(85deg) translateX(-3px);}
+    18.75%{transform: skew(0deg) translateX(0px);}
+    25%{transform: skew(-85deg) translateX(3px);}
+    31.25%{transform: skew(0deg) translateX(0px);}
+    37.5%{transform: skew(85deg) translateX(3px);}
+    43.75%{transform: skew(0deg) translateX(0px);}
+    50%{transform: skew(-85deg) translateX(-3px);}
+    51%{transform: skew(0deg) translateX(0px);}
+    100%{transform: skew(0deg) translateX(0px);}
+}
+@keyframes arrive{
+    0%{transform: translate3D(-1000px, -1000px, 1000px);}
+    100%{transform:  translate3D(0, 0, 0);}
+}
+.level li{
+    padding: 2px;
+    margin: 0;
+    
+}
+.lecteurAudio{
+    grid-column: 2 / 5;
+    grid-row: 5 / 6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    background: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178), 0 -8px 32px 0 rgba(49, 178, 180, 0.178);
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border:rgb(51, 227, 230) none 1px ;
+}
+.btnLecteur{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.itemAudio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: max-content;
+    height: 100%;
+}
+.btnMusical{
+    background: none;
+    border-radius: 25px;
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    padding: 5px;
+    margin: 5px;
+    filter: brightness(1.5);
+    box-shadow: inset 4px 4px 4px 0 rgba(199, 27, 27, 0.911), inset -6px -6px  0 rgba(77, 7, 7, 0.911);
+}
+.disabled{
+    box-shadow: inset 4px 4px 4px 0 rgba(27, 199, 56, 0.911), inset -6px -6px  0 rgba(7, 77, 44, 0.911);
+    
+}
+.btnMusical:hover, .btnMusical + p:hover{
+    filter: brightness(2.5);
+    cursor: pointer;
+}
+.itemAnim{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 150px;
+}
+.itemAnim:hover{
+    filter: brightness(1.3);
+    color: rgb(132, 250, 252);
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+
+
+/* ****************************************************MEDIA QUERIES***************************************************/
+@media all and (min-width:1700px){
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px outset rgb(49, 178, 180);
+        font-size: 2.5em;
+    }
+    #coordonnes{
+        align-items: flex-start;
+        
+    }
+    /* #description p{
+        margin: 50px;
+        
+    } */
+}
+@media all and (max-width: 1480px){
+    /* #description p{
+        margin: 10px;
+    } */
+    #deuxList{
+        justify-content: flex-start;
+    }
+    .level{
+    display: none;
+    }
+}
+@media all and (max-width: 1265px){
+    body{
+        gap: 5px;
+        height: calc(100vh - 40px);
+        width: calc(100% - 40px);
+    }
+    h2{
+        
+        padding: 0;
+        margin: 0;
+    }
+    article{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 15px;
+        font-size: 1.2em;
+    }
+    #softSkill{
+        grid-row: 4 / 6;
+    }
+    #inventaire{
+        grid-row: 2 / 4;
+    }
+}
+@media all and (max-height: 660px){
+     h2{
+        padding: 5px 10px 0 5px ;
+    }
+    article{
+        overflow: hidden;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    #coordonnes{
+        align-items: flex-start;
+        
+    }
+}
+@media all and (max-width: 1023px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        height: auto;
+        width: auto;
+        margin: 30px 10px;
+        font-size: 1.1em;
+    }
+    h2{
+        font-size: 1.2em;
+        padding: 5px 10px;
+    margin-bottom: 10px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        align-items: flex-start;
+        order: 1;
+        flex-basis: 100%;
+    }
+    #coordonnes{
+        padding-left: 3%;
+    }
+    li{
+        margin-bottom: 5px;
+    }
+    #formation li:nth-child(even){
+        margin-bottom: 20px;
+    }
+    #description, #inventaire{
+        display: none;
+    }
+    #title{
+        align-items: center;
+        order: 0;
+    }
+    #deuxList{
+        display: block;
+    }
+    h2,p{
+        text-align: center;
+    }
+    #softSkill, #hardSkill{
+        flex-basis: calc(50% - 32px);
+    }
+}
+
+@media all and (max-width: 610px){
+    #softSkill, #hardSkill{
+        flex-basis: 100%;
+    }
+}
