@@ -18,5 +18,7 @@ function checkEndSong() {
    requestAnimationFrame(checkEndSong);
 }
 btnLoop.addEventListener("click", loopSong,false);
+btnLoop.nextElementSibling.addEventListener("click", loopSong,false);
 btnMusic.addEventListener("click", playMusic,false);
+btnMusic.nextElementSibling.addEventListener("click", playMusic,false);
 window.requestAnimationFrame(checkEndSong);
