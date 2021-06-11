@@ -24,7 +24,7 @@ body{
 article{
     border-radius: 5px;
     box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178);
-    backdrop-filter: blur( 2.0px );
+    /* backdrop-filter: blur( 2.0px ); */
     border: 1px outset rgb(49, 178, 180);
     padding: 2px;
     font-size: 1.3em;
@@ -81,7 +81,7 @@ b{
     border-radius: 2px;
     /* box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178); */
     box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178), 0 -8px 32px 0 rgba(49, 178, 180, 0.178);
-    backdrop-filter: blur( 12.0px );
+    /* backdrop-filter: blur( 12.0px ); */
     /* -webkit-backdrop-filter: blur( 12.0px ); */
     /* border: 1px inset rgb(49, 178, 180); */
     margin: 0;
@@ -137,9 +137,9 @@ b{
     margin-top: 7px;
 }
 #description h2{
-    position: fixed;
-    top: 60px;
-    left: 20px;
+    position: relative;
+    top: 0px;
+    left: 5%;
    }
 #description p{
  padding: 30px;
@@ -190,7 +190,7 @@ b{
     background: none;
     border-radius: 50px;
     box-shadow: 0 8px 32px 0 rgba(49, 178, 180, 0.178), 0 -8px 32px 0 rgba(49, 178, 180, 0.178);
-    backdrop-filter: blur( 12.0px );
+    /* backdrop-filter: blur( 12.0px ); */
     border:rgb(51, 227, 230) none 1px ;
 }
 .btnLecteur{
@@ -213,7 +213,7 @@ b{
 .btnMusical{
     background: none;
     border-radius: 25px;
-    backdrop-filter: blur( 2.0px );
+    /* backdrop-filter: blur( 2.0px ); */
     padding: 5px;
     margin: 5px;
     filter: brightness(1.5);
@@ -228,9 +228,9 @@ b{
     cursor: pointer;
 }
 .itemAnim{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: relative;
+    right: 5%;
+    top: -400%;
     height: 30px;
     display: flex;
     align-items: center;
