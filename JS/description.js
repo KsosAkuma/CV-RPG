@@ -31,13 +31,13 @@ const articleObj2 = [
     // HARDSKILL i 3
     [
         // l1:
-         "Ne l'ayant utilisé qu'une fois lors d'un prototypage d'application IOS, j'ai adoré le concept.",
+         "Ne l'ayant utilisé qu'une fois lors d'un prototypage d'application IOS, j'ai adoré le concept, le language d'Apple et son framework.",
         // l2:
          "Bonnes connaissances, bien que je ne connaisse pas toutes les balises",
         // l3:
          "Bonne utilisation de CSS, j'apprécie principalement l'outil \"grid\" et je vais bientôt level Up avec des animations plus poussées!",
         // l4:
-         "J'ai commencé à apprendre la programmation avec ce language, il me plaît beaucoup, mais il reste encore du chemin à parcourir.",
+         "J'ai commencé à apprendre la programmation avec ce language, il me plaît beaucoup, mais il me reste encore du chemin à parcourir.",
         // l4:
          "Bien que titulaire d'un certificat d'apprentissage je possède actuellement très peu d'expérience pratique sur ce language.",
         // l5:
@@ -53,12 +53,12 @@ const articleObj2 = [
         // l10:
          "Notion de base, expérience à venir.",
         // l12:
-         "Ne l'ayant utilisé qu'une fois lors d'un prototypage d'application IOS, j'ai adoré ce language et son framework."
+         "Ne l'ayant utilisé qu'une fois lors d'un prototypage d'application IOS, j'ai adoré "
     ],
     //SOFTSKILL i 4
     [
         // l1:
-         "Observation, déduction et même intuition, ces trois qualitées réunies m'aide à comprendre la localisation du problème ou à le démasquer sous forme d'anticipation.",
+         "Observation, déduction et même intuition, ces trois qualitées réunies m'aident à comprendre la source du problème ou à le démasquer sous forme d'anticipation.",
         // l2:
          "J'aime optimiser mon temps de travail, ou le produit proposé, j'ai souvent des idées et je les proposes si je suis en équipe sinon je les appliques directement.",
         // l3:
@@ -70,7 +70,7 @@ const articleObj2 = [
         // l5:
          "Etant chef de rang de ma première profession, être à l'écoute et savoir accueillir est essentiel à un bon serveur, c'est la base d'un métier de service.",
         // l6:
-         "A la recherche constant d'une éternelle progression, je me dois de prendre l'initiative pour progresser et améliorer ce qui est déja établis (si cela est possible)."
+         "A la recherche constante d'une éternelle progression, je me dois de prendre l'initiative pour progresser et améliorer ce qui est déja établis (si cela est possible)."
     ],
     // FORMATION i 5
     [
@@ -81,7 +81,7 @@ const articleObj2 = [
         // l3:
          "Formation interne du Club Meditérannée suite à une promotion au poste d'assistant manager.",
         // l4:
-         "Résultat de mes annéees de lycées.",
+         "Résultat de mes annéees de lycée.",
         // l5:
          "Résultat de mes annéees de collège."
     ],

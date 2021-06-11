@@ -1,5 +1,30 @@
 https://ksosakuma.github.io/CV-RPG/
 
+HTML / CSS
+
+La partie Html, c'est l'ossature de la page web. Elle est comprise entre les balises <html>.
+Elle comprend entre les balises <head>, les <meta> de la page, c'est à dire les informations importantes liés 
+à la taille de l'écran par exemple et le nombre de caractères disponible.
+<head> contient également les liens vers les autres ficher qui vont enrichir la page web.
+Ensuite vient le <body> qui est le corps de la page, son contenu textuel ainsi que l'organisation entre les
+différents éléments de la page, exemple header ->  main -> footer.
+
+CSS
+
+La partie CSS, c'est le style, les effets, les animations, le positonnement. Cette partie permet de différencier
+les sites les uns des autres par leur aspect esthétique et leur personnification.
+Elle joue un rôle essentiel sur l'oeil de l'utilisateur qui va être sa première impression avant de
+découvrir les fonctionnalitées de la page web.
+Elle est en lien direct avec le Design!
+
+GITHUB 
+
+Github est une plateforme qui permet de déposer des fichers en Open source, donc de partager. Elle permet
+également de travailler sur plusieurs branches, cela fait office de "sauvegarde" mais également, cela permet
+à plusieurs personnes de travailler sur différentes partie d'un projet commun.
+
+LES ETAPES
+
 0)Réaliser un Cv
 		
 	adapter l'ancien
@@ -51,7 +76,3 @@ https://ksosakuma.github.io/CV-RPG/
 
 	bien que chaques ligne de code a été testé au cas par cas. on fait un test
 	de tout les cas possibles pour ne pas avoir de mauvaise suprise;
-	
-	
-	
-	

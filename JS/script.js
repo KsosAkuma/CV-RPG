@@ -5,19 +5,6 @@ let articles = document.getElementsByTagName("article");
 
 // Target chaque element de la page
 
-// Array.from(articles).forEach(article => {
-    
-//     Array.from(article.children).forEach(test => {
-        
-        
-//         test.addEventListener('mouseover',event => {
-//             // articles[7].lastElementChild.innerHTML = event.target;
-//             //test.children = HTMLCOLLECTION of element of article
-//             // console.log(test.children);
-//         })
-//     });
-// });
-
 for (let i = 0; i < Array.from(articles).length; i++) {
     const article = Array.from(articles)[i];
     // let art = i;
@@ -27,9 +14,6 @@ for (let i = 0; i < Array.from(articles).length; i++) {
         
         for (let z = 0; z < Array.from(element.children).length; z++) {
             const li = Array.from(element.children)[z];
-            // console.log(li);
-            // let l = z;
-            // let resultat = `articleObj.art$[art].l${l}`;
             li.addEventListener('mouseover',event => {
                 if(i == 1 || i == 2 || i == 7){
                     li.addEventListener('mouseover',event => {
