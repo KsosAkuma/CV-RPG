@@ -15,7 +15,7 @@ body{
     grid-template-columns: 26% 7% 24% 7% 36%;
     gap: 10px;
     margin: 10px;
-    background-image: url(../asset/background1.jpeg);
+    background-image: url(/asset/background1.jpeg);
     background-size: cover;
 
     color: rgb(51, 227, 230);
