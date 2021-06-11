@@ -23,8 +23,8 @@ function radiation() {
             timeForAnime = 0;
             dureeIntervale = 0;
             interrupteur1 == 0 ? 
-            (document.body.style.backgroundImage = ('url(/asset/background4.webp)'), interrupteur1 = 1):
-            (document.body.style.backgroundImage = ('url(/asset/background1.jpeg)'), interrupteur1 = 0);
+            (document.body.style.backgroundImage = ('url(../asset/background4.webp)'), interrupteur1 = 1):
+            (document.body.style.backgroundImage = ('url(../asset/background1.jpeg)'), interrupteur1 = 0);
         }
     }
     window.requestAnimationFrame(radiation);
