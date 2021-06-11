@@ -285,7 +285,7 @@ button{
     #deuxList{
         justify-content: flex-start;
     }
-    .level{
+    .level, #h6{
     display: none;
     }
 }
