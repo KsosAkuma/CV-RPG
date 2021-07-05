@@ -46,3 +46,22 @@ for (let i = 0; i < Array.from(articles).length; i++) {
 }
 //faire correspondre chaque article avec la propriété de mon objet
 //et chaque li avec la valeur de la proprité de cette meme propriété
+console.log(articles);
+for (let i = 0; i < Array.from(articles).length; i++) {
+    const element = Array.from(articles)[i];
+    
+    if ( i == 3 ||i == 5) {
+        element.addEventListener('click',function () {
+            element.classList.toggle('left')
+        })
+    }else if (i == 4 ) {
+        element.addEventListener('click',function () {
+            element.classList.toggle('milieu')
+        })
+    }else if(i == 6||i == 7){
+        element.addEventListener('click',function () {
+            element.classList.toggle('right')
+        })
+    }
+    
+}
