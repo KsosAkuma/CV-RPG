@@ -54,14 +54,24 @@ for (let i = 0; i < Array.from(articles).length; i++) {
         element.addEventListener('click',function () {
             element.classList.toggle('left')
         })
+        hoverLeave(element)
     }else if (i == 4 ) {
         element.addEventListener('click',function () {
             element.classList.toggle('milieu')
         })
+        hoverLeave(element)
     }else if(i == 6||i == 7){
         element.addEventListener('click',function () {
             element.classList.toggle('right')
         })
+        hoverLeave(element)
     }
-    
+}
+function hoverLeave(e) {
+    e.addEventListener("mouseleave",function () {
+        e.classList.remove("ishover")
+     })
+    e.addEventListener("mouseover",function () {
+         e.classList.add("ishover")
+     })
 }
