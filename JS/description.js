@@ -113,4 +113,3 @@ const articleObj2 = [
     // description i 7
     // [confucius()]
 ]
-console.log(articleObj2);

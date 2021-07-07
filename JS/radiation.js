@@ -34,13 +34,21 @@ function radiation() {
 const test = window.requestAnimationFrame(radiation);
 
 // cancel anim
-const itemAnim = document.getElementsByClassName('itemAnim');
-Array.from(itemAnim).forEach(element => {
+const itemAnim = document.getElementById('itemAnim');
+Array.from(itemAnim.children).forEach(element => {
     element.addEventListener("click",function () {
         // window.cancelAnimationFrame(radiation);
         // const test = window.requestAnimationFrame(radiation);
         // cancelAnimationFrame(test);
-        stop = true;
-        console.log("eteint");
+        if(stop == true) {
+            stop = false;
+            itemAnim.children[0].className = 'fas fa-times';
+            itemAnim.children[1].textContent = "stop animation";
+        }else if(stop == false){
+            stop = true;
+            itemAnim.children[0].className = 'fa fa-play';
+            itemAnim.children[1].textContent = "active animation";
+        }
+       
     })
-}); 
+});

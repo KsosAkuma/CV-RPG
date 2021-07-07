@@ -46,7 +46,6 @@ for (let i = 0; i < Array.from(articles).length; i++) {
 }
 //faire correspondre chaque article avec la propriété de mon objet
 //et chaque li avec la valeur de la proprité de cette meme propriété
-console.log(articles);
 for (let i = 0; i < Array.from(articles).length; i++) {
     const element = Array.from(articles)[i];
     

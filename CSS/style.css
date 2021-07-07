@@ -238,7 +238,7 @@ b{
     filter: brightness(2.5);
     cursor: pointer;
 }
-.itemAnim{
+#itemAnim{
     position: relative;
     right: 5%;
     top: -400%;
@@ -249,7 +249,7 @@ b{
     flex-direction: row;
     width: 150px;
 }
-.itemAnim:hover{
+#itemAnim:hover{
     filter: brightness(1.3);
     color: rgb(132, 250, 252);
     cursor: pointer;
@@ -280,7 +280,7 @@ button{
     } */
     
 }
-@media all and (min-width: 1480px){
+@media all and (min-width: 1024px){
    article.left{
         z-index: 10!important;
         background-color: #001b1bc5;
