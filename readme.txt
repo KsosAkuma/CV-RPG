@@ -1,5 +1,3 @@
-https://ksosakuma.github.io/CV-RPG/
-
 HTML / CSS
 
 La partie Html, c'est l'ossature de la page web. Elle est comprise entre les balises <html>.
